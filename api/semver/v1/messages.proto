@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option go_package = "github.com/fedragon/protobuf-go-example/semver/v1;semverv1";
+
+package semver.v1;
+
+import "types/v1/messages.proto";
+
+// Version describes a semantic version.
+message Version {
+    types.v1.Change major = 1;
+    types.v1.Change minor = 2;
+    types.v1.Change patch = 3;
+}
